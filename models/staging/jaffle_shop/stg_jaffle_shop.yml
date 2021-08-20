@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: This table filters select fields and renames the id field
+    columns:
+      - name: customer_id
+        description: This is the unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+  - name: stg_orders
+    description: this table filters select order fields and does some column renaming
+    columns:
+      - name: status
+        description: provides the status of the order
+        tests:
+          - accepted_values:
+              values: ['returned', 'completed', 'shipped', 'placed', 'return_pending']
