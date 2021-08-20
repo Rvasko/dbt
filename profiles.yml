@@ -11,7 +11,7 @@ jaffle_shop:
       role: sysadmin
       database: raw
       warehouse: compute_wh
-      schema:
+      schema: jaffle_shop
       threads: 1
       client_session_keep_alive: False
       query_tag:
