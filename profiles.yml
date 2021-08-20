@@ -1,0 +1,17 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: sea24988.us-east-1.aws
+
+      user: rickvasko
+      password: rjzajgeFo7
+
+      role: sysadmin
+      database: raw
+      warehouse: compute_wh
+      schema:
+      threads: 1
+      client_session_keep_alive: False
+      query_tag:
