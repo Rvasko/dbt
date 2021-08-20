@@ -2,10 +2,10 @@ version: 2
 
 models:
   - name: stg_customers
-    description: This table filters select fields and renames the id field
+    description: One unique customer row. This table filters select fields and renames the id field.
     columns:
       - name: customer_id
-        description: This is the unique identifier for the customer
+        description: This is the unique identifier for the customer.
         tests:
           - unique
           - not_null
@@ -17,7 +17,7 @@ models:
           - unique
           - not_null
       - name: status
-        description: provides the status of the order
+        description: '{{ doc("order_status")}}'
         tests:
           - accepted_values:
               values: ['returned', 'completed', 'shipped', 'placed', 'return_pending']
