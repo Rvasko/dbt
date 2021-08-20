@@ -12,8 +12,17 @@ models:
   - name: stg_orders
     description: this table filters select order fields and does some column renaming
     columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
       - name: status
         description: provides the status of the order
         tests:
           - accepted_values:
-              values: ['returned', 'completed', 'shipped', 'placed', 'return_pending']
+              values: ['returned', 'completed', 'shipped', 'placed']
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
