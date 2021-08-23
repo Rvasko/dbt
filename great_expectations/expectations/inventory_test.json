@@ -1,0 +1,21 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "inventory_test",
+  "expectations": [],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "raw_inventory",
+          "datasource": "prototype",
+          "limit": 1000,
+          "schema": "demo",
+          "table": "raw_inventory"
+        },
+        "citation_date": "2021-08-23T12:20:20.160146Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.13.29"
+  }
+}

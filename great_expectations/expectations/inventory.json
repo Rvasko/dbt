@@ -1,0 +1,438 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "inventory",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "partkey",
+          "supplierkey",
+          "availqty",
+          "supplycost",
+          "part_supply_comment",
+          "supplier_name",
+          "supplier_address",
+          "supplier_nation_key",
+          "supplier_phone",
+          "supplier_acctbal",
+          "supplier_comment",
+          "part_name",
+          "part_mfgr",
+          "part_brand",
+          "part_type",
+          "part_size",
+          "part_container",
+          "part_retailprice",
+          "part_comment",
+          "supplier_nation_name",
+          "supplier_nation_comment",
+          "supplier_region_key",
+          "supplier_region_name",
+          "supplier_region_comment"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 24627,
+        "min_value": 24627
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "supplierkey",
+        "max_value": 1,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "supplierkey",
+        "max_value": 99999,
+        "min_value": 99999
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "supplierkey",
+        "max_value": 49845.594794,
+        "min_value": 49845.594794
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "supplierkey",
+        "max_value": 49952,
+        "min_value": 49952
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": false,
+        "column": "supplierkey",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              4826,
+              4826
+            ],
+            [
+              24836,
+              24836
+            ],
+            [
+              49952,
+              49952
+            ],
+            [
+              74660,
+              74660
+            ],
+            [
+              94903,
+              94903
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "supplierkey"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "supplierkey",
+        "max_value": 0.8851260811304665,
+        "min_value": 0.8851260811304665
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "supplierkey",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "supplier_name"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "supplier_name",
+        "max_value": 0.8851260811304665,
+        "min_value": 0.8851260811304665
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "supplier_name",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "supplier_address"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "supplier_address",
+        "max_value": 0.8851260811304665,
+        "min_value": 0.8851260811304665
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "supplier_address",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "max_value": 0,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "max_value": 24,
+        "min_value": 24
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "max_value": 11.990092,
+        "min_value": 11.990092
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "max_value": 12,
+        "min_value": 12
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": false,
+        "column": "supplier_nation_key",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              1,
+              1
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              23,
+              23
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "value_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "supplier_nation_key"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "max_value": 0.0010151459779916352,
+        "min_value": 0.0010151459779916352
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "supplier_nation_key",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "supplier_phone"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "supplier_phone",
+        "max_value": 0.8851260811304665,
+        "min_value": 0.8851260811304665
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "supplier_phone",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "raw_inventory",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "my_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2021-08-23T17:04:11.806359Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.13.29"
+  }
+}
