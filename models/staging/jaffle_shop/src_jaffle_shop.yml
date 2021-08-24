@@ -16,6 +16,7 @@ sources:
 
       - name: orders
         description: Raw orders data
+        database: raw
         loaded_at_field: _etl_loaded_at
         freshness:
           warn_after: {count: 12, period: hour}
@@ -26,3 +27,12 @@ sources:
             tests:
               - unique
               - not_null
+
+
+  - name: DV_PROTOTYPE_DB
+    description: prototype db
+    database: dv_prototype_db
+    schema: demo
+    tables:
+      - name: raw_orders
+        description: Contains raw order data from snowflake sample db
