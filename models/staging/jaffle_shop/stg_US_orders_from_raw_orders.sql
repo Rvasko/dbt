@@ -5,7 +5,7 @@ with raw_orders_US as (
         CUSTOMERKEY as CUSTOMER_KEY,
         QUANTITY,
         EXTENDEDPRICE as EXTENDED_PRICE,
-        TRIM(CLERK, 'Clerk#0') AS CLERK_NUMBER,
+        --TRIM(CLERK, 'Clerk#0') AS CLERK_NUMBER,
         COMMITDATE AS DATE_ORDERED,
         SHIPDATE AS DATE_SHIPPED
 

@@ -27,6 +27,7 @@ sources:
             tests:
               - unique
               - not_null
+              - dbt_expectations.expect_column_to_exist
 
 
   - name: DV_PROTOTYPE_DB
@@ -36,3 +37,35 @@ sources:
     tables:
       - name: raw_orders
         description: Contains raw order data from snowflake sample db
+        columns:
+          - name: ORDERKEY
+            description: Primary key for raw_orders
+      #      tests:
+      #        - unique
+      #        - mot_null
+
+  - name: SNOWFLAKE_SAMPLE_DATA
+    description: Snowflake sample data
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF10
+    tables:
+      - name: orders
+        description: Contains raw order data from snowflake sample db
+
+      - name: lineitem
+        description: Provides the lineitem details
+
+      - name: customer
+        description: Provides customer information
+
+      - name: nation
+        description: Provides nation information
+
+      - name: region
+        description: Provides region information
+
+      - name: part
+        description: Provides specific part information
+
+      - name: supplier
+        description: Provides information about the supplier
