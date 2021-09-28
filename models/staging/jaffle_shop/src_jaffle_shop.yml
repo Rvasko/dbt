@@ -10,6 +10,8 @@ sources:
         columns:
           - name: id
             description: Primary key for customers
+            Null handling: Should not be null
+            Example Values: 1234, 5678
             tests:
               - unique
               - not_null
